@@ -9,3 +9,10 @@ The website will have a list of events and useful links for members.
 We can shoot to have something like [BitDevs.org](https://bitdevs.org/)
 
 Later on, we can get more ambitious. But let's keep it simple for now.
+
+## Tech:
+Let's aim to use:
+- React
+- ES6
+- regular old css
+
