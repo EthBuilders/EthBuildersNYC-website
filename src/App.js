@@ -27,7 +27,7 @@ function App() {
             <h1>EthBuilders.NYC</h1>
             <p>EthBuilder is a community for those interested 
             in discussing and participating in the research and
-            development of Bitcoin and related protocols.</p>
+            development of Ethereum and related protocols.</p>
             <p>Everyone is welcomed!</p>
                         
             <h2>Upcoming and Recent Events</h2>
