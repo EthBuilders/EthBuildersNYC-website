@@ -14,5 +14,9 @@ Later on, we can get more ambitious. But let's keep it simple for now.
 Let's aim to use:
 - React
 - ES6
-- regular old css
+- [BaseWeb](https://baseweb.design/) - Uber's design system
 
+## Design System
+We are using a design system because:
+1. Its easy to just add components without having to think about css and designing
+2. We can template the existing code to change styles if needed.
