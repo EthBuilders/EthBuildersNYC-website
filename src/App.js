@@ -29,7 +29,7 @@ function App() {
             in discussing and participating in the research and
             development of Bitcoin and related protocols.</p>
             <p>Everyone is welcomed!</p>
-            
+                        
             <h2>Upcoming and Recent Events</h2>
             <h2>Recent Blog Posts</h2>
             <h2>Resources</h2>
