@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+// baseUI setup
+// see: https://baseweb.design/getting-started/setup/
+import {Client as Styletron} from 'styletron-engine-atomic';
+import {Provider as StyletronProvider} from 'styletron-react';
+import {LightTheme, BaseProvider, styled} from 'baseui';
+
+import Header from './components/Header.js';
+
+import EthBuildersLogo from './images/EthBuildersWhite.png';
+
+const engine = new Styletron();
+
+const Centered = styled('div', {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '100%',
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyletronProvider value={engine}>
+      <BaseProvider theme={LightTheme}>
+        <Header brandName='EthBuilders.NYC' />
+        <Centered>
+          <div>
+            <h1>EthBuilders.NYC</h1>
+            <p>EthBuilder is a community for those interested 
+            in discussing and participating in the research and
+            development of Bitcoin and related protocols.</p>
+            <p>Everyone is welcomed!</p>
+            <img src={EthBuildersLogo} alt="group logo" />
+          </div>
+        </Centered>
+      </BaseProvider>
+    </StyletronProvider>
   );
 }
 
