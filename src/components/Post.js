@@ -26,7 +26,7 @@ const Post = (props) => {
       <SpanDate>{props.date}</SpanDate>
       <SpanArrow>&raquo; </SpanArrow>
       <StyledLink href={props.link}>
-        {props.event}
+        {props.title}
       </StyledLink>
     </PostDiv>
   );

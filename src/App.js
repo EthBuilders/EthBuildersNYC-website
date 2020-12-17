@@ -35,12 +35,12 @@ function App() {
             <h2>Upcoming and Recent Events</h2>
             <Post 
               date='30 Nov 2020' 
-              event='Book Club - Debt: The First 5000 Years - Ch 1' 
+              title='Book Club - Debt: The First 5000 Years - Ch 1' 
               link="https://www.meetup.com/ethbuilders/events/wrpmcsybcqbcc/"
             />
             <Post 
               date='06 Dec 2020' 
-              event='Book Club - Debt: The First 5000 Years - Ch 2' 
+              title='Book Club - Debt: The First 5000 Years - Ch 2' 
               link="https://www.meetup.com/ethbuilders/events/wrpmcsybcqbcc/"
             />
             <h2>Recent Blog Posts</h2>
