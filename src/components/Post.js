@@ -20,7 +20,7 @@ const SpanArrow = styled('div', {
   paddingRight: '1%',
 });
 
-const EventPost = (props) => {
+const Post = (props) => {
   return (
     <PostDiv>
       <SpanDate>{props.date}</SpanDate>
@@ -32,4 +32,4 @@ const EventPost = (props) => {
   );
 }
 
-export default EventPost;
+export default Post;
