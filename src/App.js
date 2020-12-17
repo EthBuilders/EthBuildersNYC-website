@@ -5,6 +5,7 @@ import {Provider as StyletronProvider} from 'styletron-react';
 import {LightTheme, BaseProvider, styled} from 'baseui';
 
 import Header from './components/Header.js';
+import EventPost from './components/EventPost.js';
 
 import EthBuildersLogo from './images/EthBuildersWhite.png';
 
@@ -31,6 +32,16 @@ function App() {
             <p>Everyone is welcomed!</p>
                         
             <h2>Upcoming and Recent Events</h2>
+            <EventPost 
+              date='30 Nov 2020' 
+              event='Book Club - Debt: The First 5000 Years - Ch 1' 
+              link="https://www.meetup.com/ethbuilders/events/wrpmcsybcqbcc/"
+            />
+            <EventPost 
+              date='06 Dec 2020' 
+              event='Book Club - Debt: The First 5000 Years - Ch 2' 
+              link="https://www.meetup.com/ethbuilders/events/wrpmcsybcqbcc/"
+            />
             <h2>Recent Blog Posts</h2>
             <h2>Resources</h2>
             <img src={EthBuildersLogo} alt="group logo" />
