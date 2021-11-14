@@ -1,15 +1,28 @@
 // from: https://baseweb.design/components/header-navigation/
 import { StyledNavigationItem } from "baseui/header-navigation";
 import { StyledLink } from "baseui/link";
+import { NavLink } from "react-router-dom";
 
-const NavigationItem = (props) =>  {
-    return (    
+const NavigationItem = ({linkName, link}) =>  {
+
+    return (  
+      <div>
+      
       <StyledNavigationItem>
-        <StyledLink href={props.href}>
-          {props.name}
+
+        <NavLink 
+          to={link}
+          exact
+        >
+        <StyledLink >
+          {linkName}
         </StyledLink>
+        </NavLink>
+
       </StyledNavigationItem>
-    );
+
+      </div>
+    )
 }
 
 export default NavigationItem;

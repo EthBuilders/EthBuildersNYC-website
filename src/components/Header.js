@@ -7,37 +7,49 @@ import {
   StyledNavigationItem
 } from "baseui/header-navigation";
 import { Button } from "baseui/button";
+import { NavLink } from "react-router-dom";
 import NavigationItem from "./NavigationItem";
 
-const Header = (props) =>  {
+const Header = () =>  {
+
+  const handleJoin = () => {
+    
+    return <NavLink
+        to="/join"
+        exact
+      >
+    </NavLink>
+  }
+
     return (
       <HeaderNavigation>
         <StyledNavigationList $align={ALIGN.left}>
-          <StyledNavigationItem>{props.brandName}</StyledNavigationItem>
+          <StyledNavigationItem>EthBuilders.NYC</StyledNavigationItem>
         </StyledNavigationList>
 
         <StyledNavigationList $align={ALIGN.center} />
 
         <StyledNavigationList $align={ALIGN.right}>
           <NavigationItem 
-            name="About"
-            href="#basic-link1" />
+            linkName="About" 
+            link="/"
+            />
 
           <NavigationItem 
-            name="Events"
-            href="#basic-link2" />
+            linkName="Events" 
+            link="/events"
+            />
 
           <NavigationItem 
-            name="Blog"
-            href="#basic-link3" />
+            linkName="Blog" 
+            link="/blog"
+            />
 
         <NavigationItem 
-            name="Meetup"
-            href="#basic-link3" />
+            linkName="Resources" 
+            link="/resources"
+            />
 
-        <NavigationItem 
-            name="Resources"
-            href="#basic-link3" />
         </StyledNavigationList>
 
         <StyledNavigationList $align={ALIGN.right}>

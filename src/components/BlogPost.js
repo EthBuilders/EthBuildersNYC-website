@@ -45,16 +45,16 @@ const BlogPostContent = styled('div', {
 });
 
 // need component that parses and inserts into tags
-const BlogPost = (props) => {
+const BlogPost = ({postTitle, postDate, postAuthor, postContent}) => {
   return (
     <BlogPostDiv>
-      <BlogPostTitle>Title</BlogPostTitle>
-      <BlogPostDate>07 Dec 2020</BlogPostDate>
+      <BlogPostTitle>{postTitle}</BlogPostTitle>
+      <BlogPostDate>{postDate}</BlogPostDate>
       <BlogPostInfo>
-        <span>{props.date}</span>
+        <span>{postAuthor}</span>
       </BlogPostInfo>
       <BlogPostContent>
-        "Hello"
+        {postContent}
       </BlogPostContent>
     </BlogPostDiv>
   );
