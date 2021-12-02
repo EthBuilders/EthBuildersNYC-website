@@ -4,7 +4,7 @@ import BlogPost from './BlogPost'
 const Blog = () => {
 
     return (
-        <div>
+        <div className="container">
             <h2>Recent Blog Posts</h2>
             <BlogPost 
                 postTitle="Add Title Here"

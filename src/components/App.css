@@ -13,6 +13,19 @@ body {
   background-color: #fff;
 }
 
+.container {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 5%;
+  margin-left: 20%;
+}
+
+#eth-id {
+  font-size: 1.5rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

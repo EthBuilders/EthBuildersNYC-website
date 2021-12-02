@@ -19,7 +19,7 @@ const About = () => {
         <StyletronProvider value={engine}>
         <BaseProvider theme={LightTheme}>
         
-        <Centered>
+        <Centered style={{paddingTop: '3%',}}>
             <h1>EthBuilders.NYC</h1>
         </Centered>
         

@@ -12,19 +12,10 @@ import NavigationItem from "./NavigationItem";
 
 const Header = () =>  {
 
-  const handleJoin = () => {
-    
-    return <NavLink
-        to="/join"
-        exact
-      >
-    </NavLink>
-  }
-
     return (
       <HeaderNavigation>
-        <StyledNavigationList $align={ALIGN.left}>
-          <StyledNavigationItem>EthBuilders.NYC</StyledNavigationItem>
+        <StyledNavigationList style={{marginLeft: "3%"}}>
+          <StyledNavigationItem id="eth-id">EthBuilders.NYC</StyledNavigationItem>
         </StyledNavigationList>
 
         <StyledNavigationList $align={ALIGN.center} />
@@ -52,9 +43,13 @@ const Header = () =>  {
 
         </StyledNavigationList>
 
-        <StyledNavigationList $align={ALIGN.right}>
-          <StyledNavigationItem>
-            <Button>Get started</Button>
+        <StyledNavigationList $align={ALIGN.right} style={{marginRight: "3%"}}>
+          <StyledNavigationItem link="/resources">
+            <NavLink to="/join" exact>
+              <Button>
+                Get started
+              </Button>
+            </NavLink>
           </StyledNavigationItem>
         </StyledNavigationList>
 
